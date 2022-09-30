@@ -1,0 +1,14 @@
+header {
+  background-color: #cbdcff;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin-bottom: 0;
+      margin-left: 6px;
+    }
+  }
+}
