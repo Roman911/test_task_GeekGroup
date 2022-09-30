@@ -1,14 +1,44 @@
 header {
-  background-color: #cbdcff;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  .content {
+  border-bottom: 1px solid #e0e3e3;
+  .top {
+    background-color: #cbdcff;
+    padding-top: 6px;
+    padding-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     p {
       margin-bottom: 0;
-      margin-left: 6px;
+      margin-left: 10px;
+    }
+  }
+  .nav-bar {
+    padding-top: 23px;
+    .logo.col-2 {
+      padding: 0;
+    }
+    .search {
+      &__icon {
+        background-color: #fff;
+        border-radius: 4px;
+      }
+      &__input {
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 4px;
+      }
+    }
+    .btn {
+      font-size: 12px;
+      padding: 9px 21px;
+      border-radius: 4px;
+    }
+    .form-select {
+      font-size: 12px;
+      background-position: right 16px center;
+      background-size: 20px 12px;
+      width: 72px;
+      margin-left: 4px;
     }
   }
 }
