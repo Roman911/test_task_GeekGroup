@@ -1,10 +1,12 @@
+@import "/src/styles/variabels";
+
 body {
   font-family: Stolzl-Regular, sans-serif !important;
 }
 
 // borderradius 4px
 .m-br-4 {
-  border-radius: 4px !important;
+  border-radius: var(--border-radius) !important;
 }
 
 // font size 12px
