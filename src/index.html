@@ -8,23 +8,28 @@
   </head>
 
   <body>
-    <header>
-      <div class="top">
+    <header class="border-bottom">
+      <div class="top pb-1 d-flex align-items-center justify-content-center">
         <img src="/src/images/like.png" />
         <img src="/src/images/dress.png" />
-        <p class="h6">Брендовий верхній одяг від 899 грн</p>
+        <p class="h6 mb-0 ms-2 text-primary">
+          Брендовий верхній одяг від 899 грн
+        </p>
       </div>
-      <div class="nav-bar">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="logo col-2">
-              <a href="#">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container p-0">
+          <div class="row align-items-center w-100">
+            <div class="col-2">
+              <a class="navbar-brand" href="#">
                 <img src="/src/images/logo.png" alt="logo" />
               </a>
             </div>
-            <div class="col-6">
-              <div class="input-group search">
-                <span class="input-group-text search__icon" id="basic-addon1">
+            <div class="col-6 ps-4">
+              <div class="input-group search border-end-0">
+                <span
+                  class="input-group-text bg-light ps-3 m-br-4"
+                  id="basic-addon1"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -42,51 +47,110 @@
                 </span>
                 <input
                   type="text"
-                  class="form-control search__input border-start-0"
+                  class="form-control search__input border-start-0 m-br-4 m-fs-12"
                   placeholder="Знайти речі або бренди"
                   aria-label="search"
                   aria-describedby="basic-addon1"
                 />
               </div>
             </div>
-            <div class="col-4">
-              <div class="hstack gap-3">
-                <button type="button" class="btn btn-dark">Додати товар</button>
+            <div class="col-4 ps-4">
+              <div class="hstack gap-2">
+                <button type="button" class="btn btn-dark m-br-4 m-fs-12">
+                  Додати товар
+                </button>
                 <select
-                  class="form-select border-0"
+                  class="form-select border-0 m-fs-12 ms-1"
                   aria-label="Default select example"
                 >
                   <option selected>Укр</option>
                   <option value="1">En</option>
                   <option value="2">Рус</option>
                 </select>
-                <div class="position-relative">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="21"
-                    heigh="19"
-                    viewBox="0 0 21 19"
-                    file="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      fill="#2D3132"
-                      d="M10.2426 1.75736C12.5858 -0.585787 16.3848 -0.585787 18.7279 1.75736C21.0711 4.10051 21.0711 7.89949 18.7279 10.2426L10.2426 18.728L1.75736 10.2427C-0.585787 7.89953 -0.585786 4.10054 1.75736 1.75739C4.1005 -0.585744 7.89947 -0.58576 10.2426 1.75736ZM17.3137 3.17158C15.7516 1.60948 13.2189 1.60947 11.6568 3.17157L10.2426 4.58579L8.82843 3.17161C7.26633 1.60951 4.73367 1.60951 3.17157 3.17161C1.60948 4.7337 1.60948 7.26636 3.17157 8.82846L10.2426 15.8995L17.3137 8.82843C18.8758 7.26633 18.8758 4.73367 17.3137 3.17158Z"
-                    ></path>
-                  </svg>
-                  <span
-                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary"
-                  >
-                    8
-                  </span>
+                <div class="hstack gap-4 ms-2">
+                  <div class="position-relative">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      heigh="19"
+                      viewBox="0 0 21 19"
+                      file="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#2D3132"
+                        d="M10.2426 1.75736C12.5858 -0.585787 16.3848 -0.585787 18.7279 1.75736C21.0711 4.10051 21.0711 7.89949 18.7279 10.2426L10.2426 18.728L1.75736 10.2427C-0.585787 7.89953 -0.585786 4.10054 1.75736 1.75739C4.1005 -0.585744 7.89947 -0.58576 10.2426 1.75736ZM17.3137 3.17158C15.7516 1.60948 13.2189 1.60947 11.6568 3.17157L10.2426 4.58579L8.82843 3.17161C7.26633 1.60951 4.73367 1.60951 3.17157 3.17161C1.60948 4.7337 1.60948 7.26636 3.17157 8.82846L10.2426 15.8995L17.3137 8.82843C18.8758 7.26633 18.8758 4.73367 17.3137 3.17158Z"
+                      ></path>
+                    </svg>
+                    <span
+                      class="position-absolute translate-middle badge bg-gray"
+                    >
+                      8
+                    </span>
+                  </div>
+                  <div class="position-relative">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      heigh="19"
+                      viewBox="0 0 20 19"
+                      file="none"
+                    >
+                      <path
+                        fill="#2D3132"
+                        d="M15 6C15 6.55228 14.5523 7 14 7H6C5.44772 7 5 6.55228 5 6C5 5.44772 5.44772 5 6 5H14C14.5523 5 15 5.44772 15 6Z"
+                      ></path>
+                      <path
+                        fill="#2D3132"
+                        d="M5 10C5 10.5523 5.44772 11 6 11H14C14.5523 11 15 10.5523 15 10C15 9.44772 14.5523 9 14 9H6C5.44772 9 5 9.44772 5 10Z"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#2D3132"
+                        d="M4 0C1.79086 0 0 1.79086 0 4V16C0 17.8811 1.93624 19.1395 3.65525 18.3754L8.2243 16.3448C8.73574 16.1174 9.28918 16 9.84886 16H16C18.2091 16 20 14.2091 20 12V4C20 1.79086 18.2091 0 16 0H4ZM16 2H4C2.89543 2 2 2.89543 2 4V16C2 16.4338 2.44653 16.724 2.84297 16.5478L7.41203 14.5171C8.17918 14.1762 9.00935 14 9.84886 14H16C17.1046 14 18 13.1046 18 12V4C18 2.89543 17.1046 2 16 2Z"
+                      ></path>
+                    </svg>
+                    <span
+                      class="position-absolute translate-middle badge active"
+                    >
+                      3
+                    </span>
+                  </div>
+                  <div class="position-relative">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      heigh="19"
+                      viewBox="0 0 20 19"
+                      file="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#2D3132"
+                        d="M2.79797 2H0V0H4.44013L5.07398 3.19462C5.16705 3.6625 5.57777 4 6.05486 4H16.114C18.2086 4 19.6585 6.09212 18.923 8.05337L17.423 12.0534C16.9839 13.2243 15.8645 14 14.614 14H9.28432C6.89805 14 4.84434 12.3137 4.37993 9.97309L2.79797 2ZM5.62449 5.96918L6.34169 9.58386C6.62034 10.9882 7.85256 12 9.28432 12H14.614C15.0308 12 15.404 11.7414 15.5503 11.3511L17.0503 7.35112C17.2955 6.69737 16.8122 6 16.114 6H6.05486C5.90907 6 5.76535 5.98951 5.62449 5.96918Z"
+                      ></path>
+                      <path
+                        fill="#2D3132"
+                        d="M8 17.5C8 18.3284 7.32843 19 6.5 19C5.67157 19 5 18.3284 5 17.5C5 16.6716 5.67157 16 6.5 16C7.32843 16 8 16.6716 8 17.5Z"
+                      ></path>
+                      <path
+                        fill="#2D3132"
+                        d="M15.5 19C16.3284 19 17 18.3284 17 17.5C17 16.6716 16.3284 16 15.5 16C14.6716 16 14 16.6716 14 17.5C14 18.3284 14.6716 19 15.5 19Z"
+                      ></path>
+                    </svg>
+                    <span class="position-absolute translate-middle badge">
+                      3
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="menu">123</div>
-      </div>
+      </nav>
     </header>
   </body>
 </html>
