@@ -1,3 +1,5 @@
+@import "/src/styles/variabels";
+
 header {
   .top {
     background-color: #cbdcff;
@@ -20,25 +22,45 @@ header {
     }
     .btn {
       padding: 9px 21px;
+      background-color: $main-color;
     }
     .form-select {
       background-position: right 16px center;
       background-size: 20px 12px;
-      width: 72px;
+      width: 60px;
       //margin-left: 4px;
     }
     .badge {
       width: 14px;
       height: 14px;
       font-weight: 400;
-      color: #2d3132;
+      color: $main-color;
       background-color: #eff1f1;
       padding: 2px 4px;
       font-size: 10px;
       top: 3px;
       &.active {
-        background-color: #ff5449;
+        background-color: $red;
         color: #fff;
+      }
+    }
+  }
+  .nav-list {
+    .nav-link {
+      color: $main-color;
+      font-size: 13px;
+      font-family: Stolzl-Medium;
+      letter-spacing: 0.4px;
+      transition: 200ms;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+      &:hover {
+        border-bottom-color: $main-color;
+        opacity: 0.8;
+      }
+      &.active {
+        border-bottom-color: $main-color;
       }
     }
   }
