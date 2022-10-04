@@ -2,11 +2,16 @@
 
 .main {
   .breadcrumb-item {
-    a {
-      color: $main-color;
-    }
     &.active {
       color: #747778;
     }
+  }
+  .filter {
+    font-size: 22px;
+    font-family: Stolzl-Book;
+  }
+  .my-select {
+    background-color: #eff1f1;
+    border-radius: 12px;
   }
 }

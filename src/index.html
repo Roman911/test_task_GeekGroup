@@ -188,13 +188,29 @@
       <nav class="mt-4" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item my-fs-12">
-            <a class="text-decoration-none" href="#">Головна</a>
+            <a class="text-decoration-none my-pc" href="#">Головна</a>
           </li>
           <li class="breadcrumb-item my-fs-12 active" aria-current="page">
             Каталог одягу
           </li>
         </ol>
       </nav>
+      <h3 class="title mt-5">Каталог одягу</h3>
+      <div class="hstack justify-content-between">
+        <p class="filter my-sc">Фільтри</p>
+        <div class="hstack">
+          <p class="my-fs-12 my-sc w-100 mb-0">Сортувати за:</p>
+          <select
+            class="form-select form-select-sm my-select my-pc my-fs-12 border-0 position-relative"
+            aria-label=".form-select-sm example"
+          >
+            <option selected>За замовчуванням</option>
+            <option value="1">За рейтингом</option>
+            <option value="2">Новинки</option>
+            <span class="position-absolute">1</span>
+          </select>
+        </div>
+      </div>
     </section>
   </body>
 </html>

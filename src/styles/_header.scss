@@ -22,7 +22,7 @@ header {
     }
     .btn {
       padding: 9px 21px;
-      background-color: $main-color;
+      background-color: $primery;
     }
     .form-select {
       background-position: right 16px center;
@@ -34,7 +34,7 @@ header {
       width: 14px;
       height: 14px;
       font-weight: 400;
-      color: $main-color;
+      color: $primery;
       background-color: #eff1f1;
       padding: 2px 4px;
       font-size: 10px;
@@ -47,7 +47,7 @@ header {
   }
   .nav-list {
     .nav-link {
-      color: $main-color;
+      color: $primery;
       font-size: 13px;
       font-family: Stolzl-Medium;
       letter-spacing: 0.4px;
@@ -56,11 +56,11 @@ header {
       border-bottom-style: solid;
       border-bottom-color: transparent;
       &:hover {
-        border-bottom-color: $main-color;
+        border-bottom-color: $primery;
         opacity: 0.8;
       }
       &.active {
-        border-bottom-color: $main-color;
+        border-bottom-color: $primery;
       }
     }
   }
