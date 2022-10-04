@@ -1,0 +1,12 @@
+@import "/src/styles/variabels";
+
+.main {
+  .breadcrumb-item {
+    a {
+      color: $main-color;
+    }
+    &.active {
+      color: #747778;
+    }
+  }
+}
