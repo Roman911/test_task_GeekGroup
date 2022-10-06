@@ -1,0 +1,96 @@
+@import "/src/styles/variabels";
+
+.filter {
+  .accordion-item {
+    margin-bottom: 2px;
+
+    .accordion-header,
+    .accordion-collapse {
+      border: 1px solid $gray;
+    }
+    .accordion-header {
+      .accordion-button {
+        background-color: $gray;
+        color: $gray-900;
+        font-family: Stolzl-Book;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+  }
+  .accordion-collapse {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+  }
+
+  // range
+  .slider {
+    & > div {
+      left: 4px;
+      right: 3px;
+      height: 4px;
+      & > .inverse {
+        height: 4px;
+        background-color: #c4c7c7;
+      }
+      & > .range {
+        height: 4px;
+        background-color: #8e9192;
+      }
+      & > .thumb {
+        top: -6px;
+        z-index: 2;
+        height: 16px;
+        width: 16px;
+        margin-left: -6px;
+        cursor: pointer;
+        background-color: $secondary;
+        border-radius: 4px;
+      }
+    }
+    & > input[type="range"] {
+      pointer-events: none;
+      -webkit-appearance: none;
+      z-index: 3;
+      height: 14px;
+      top: -2px;
+    }
+  }
+
+  div[slider] > input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 0px;
+    border: 0 none;
+    -webkit-appearance: none;
+  }
+
+  div[slider] > input[type="range"]::-ms-fill-lower {
+    background: transparent;
+    border: 0 none;
+  }
+
+  div[slider] > input[type="range"]::-ms-fill-upper {
+    background: transparent;
+    border: 0 none;
+  }
+
+  div[slider] > input[type="range"]::-ms-tooltip {
+    display: none;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+    font-family: Stolzl-Book;
+    color: $gray-900;
+  }
+  .amount {
+    font-family: Stolzl-Book;
+    color: $dark-gray;
+    font-size: 14px;
+  }
+}

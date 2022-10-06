@@ -1,0 +1,10 @@
+@import "/node_modules/bootstrap/scss/functions";
+
+$body-color: #2d3132;
+$primary: #2d3132;
+//$secondary: #eff1f1;
+$border-color: #e0e3e3;
+$input-border-color: $border-color;
+
+@import "/node_modules/bootstrap/scss/variables";
+@import "~bootstrap/scss/bootstrap";

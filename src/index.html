@@ -9,23 +9,21 @@
 
   <body>
     <header class="border-bottom">
-      <div class="top pb-1 d-flex align-items-center justify-content-center">
+      <div class="top py-1 d-flex align-items-center justify-content-center">
         <img src="/src/images/like.png" />
         <img src="/src/images/dress.png" />
-        <p class="h6 mb-0 ms-2">Брендовий верхній одяг від 899 грн</p>
+        <p class="h6 mt-2 ms-2">Брендовий верхній одяг від 899 грн</p>
       </div>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar mt-3 navbar-expand-lg">
         <div class="container p-0">
-          <div
-            class="row align-items-center w-100 border-bottom pb-4 ms-0 me-0"
-          >
+          <div class="row align-items-center w-100 border-bottom pb-4 mx-0">
             <div class="col-2 ps-0">
               <a class="navbar-brand" href="#">
                 <img src="/src/images/logo.png" alt="logo" />
               </a>
             </div>
             <div class="col-6">
-              <div class="input-group search border-end-0 position-relative">
+              <div class="input-group search position-relative">
                 <span
                   class="position-absolute top-50 translate-middle search__icon"
                 >
@@ -46,7 +44,7 @@
                 </span>
                 <input
                   type="text"
-                  class="form-control search__input my-br-4 my-fs-12 ps-5"
+                  class="form-control rounded-1 my-fs-12 ps-5 ff-sb py-2"
                   placeholder="Знайти речі або бренди"
                   aria-label="search"
                   aria-describedby="basic-addon1"
@@ -55,18 +53,21 @@
             </div>
             <div class="col-4 ps-3 pe-0">
               <div class="hstack gap-2 justify-content-between">
-                <button type="button" class="btn btn-dark my-br-4 my-fs-12">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-1 my-fs-12 py-2 px-4"
+                >
                   Додати товар
                 </button>
                 <select
-                  class="form-select border-0 my-fs-12 p-0"
+                  class="form-select border-0 my-fs-12 p-0 shadow-none"
                   aria-label="Default select example"
                 >
                   <option selected>Укр</option>
                   <option value="1">En</option>
                   <option value="2">Рус</option>
                 </select>
-                <div class="hstack gap-4">
+                <div class="group hstack gap-4">
                   <div class="position-relative">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +84,7 @@
                       ></path>
                     </svg>
                     <span
-                      class="position-absolute translate-middle badge bg-gray"
+                      class="position-absolute translate-middle badge group__badge text-primary my-fs-10"
                     >
                       8
                     </span>
@@ -112,7 +113,7 @@
                       ></path>
                     </svg>
                     <span
-                      class="position-absolute translate-middle badge active"
+                      class="position-absolute translate-middle my-fs-10 badge group__badge active"
                     >
                       3
                     </span>
@@ -140,12 +141,14 @@
                         d="M15.5 19C16.3284 19 17 18.3284 17 17.5C17 16.6716 16.3284 16 15.5 16C14.6716 16 14 16.6716 14 17.5C14 18.3284 14.6716 19 15.5 19Z"
                       ></path>
                     </svg>
-                    <span class="position-absolute translate-middle badge">
+                    <span
+                      class="position-absolute translate-middle my-fs-10 badge group__badge text-primary"
+                    >
                       3
                     </span>
                   </div>
                 </div>
-                <div class="d-flex align-items-center ms-2">
+                <div class="d-flex align-items-center ms-2 avatar">
                   <img class="me-2" src="/src/images/avatar.png" alt="avatar" />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -168,27 +171,38 @@
         </div>
       </nav>
       <div class="container p-0 nav-list">
-        <nav class="nav">
-          <a class="nav-link text-uppercase" aria-current="page" href="#"
+        <nav class="nav text-uppercase ff-sm">
+          <a
+            class="nav-link border border-2 border-white"
+            aria-current="page"
+            href="#"
             >Головна</a
           >
-          <a class="nav-link text-uppercase active" href="#">Каталог</a>
-          <a class="nav-link text-uppercase" href="#">Жінкам</a>
-          <a class="nav-link text-uppercase" href="#">Чоловікам</a>
-          <a class="nav-link text-uppercase" href="#">дИТЯЧі речі</a>
-          <a class="nav-link text-uppercase" href="#">Аукціон</a>
-          <a class="nav-link text-uppercase" href="#">Бренди</a>
-          <a class="nav-link text-uppercase" href="#">Акції</a>
-          <a class="nav-link text-uppercase" href="#">Аутентифікація</a>
-          <a class="nav-link text-uppercase" href="#">Блог</a>
+          <a class="nav-link border border-2 border-white active" href="#"
+            >Каталог</a
+          >
+          <a class="nav-link border border-2 border-white" href="#">Жінкам</a>
+          <a class="nav-link border border-2 border-white" href="#"
+            >Чоловікам</a
+          >
+          <a class="nav-link border border-2 border-white" href="#"
+            >дИТЯЧі речі</a
+          >
+          <a class="nav-link border border-2 border-white" href="#">Аукціон</a>
+          <a class="nav-link border border-2 border-white" href="#">Бренди</a>
+          <a class="nav-link border border-2 border-white" href="#">Акції</a>
+          <a class="nav-link border border-2 border-white" href="#"
+            >Аутентифікація</a
+          >
+          <a class="nav-link border border-2 border-white" href="#">Блог</a>
         </nav>
       </div>
     </header>
-    <section class="main container ps-0 pe-0 pt-2">
+    <section class="main container px-0 pt-2">
       <nav class="mt-4" aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item my-fs-12">
-            <a class="text-decoration-none my-pc" href="#">Головна</a>
+            <a class="text-decoration-none" href="#">Головна</a>
           </li>
           <li class="breadcrumb-item my-fs-12 active" aria-current="page">
             Каталог одягу
@@ -196,36 +210,34 @@
         </ol>
       </nav>
       <h3 class="mt-5">Каталог одягу</h3>
-      <div class="hstack justify-content-between mt-4 pt-2">
-        <p class="title my-sc mb-0">Фільтри</p>
-        <div class="hstack">
-          <p class="my-fs-12 my-sc mb-0 me-4">Сортувати за:</p>
-          <div class="my-select position-relative">
-            <select
-              class="form-select form-select-sm my-pc my-fs-12 border-0"
-              aria-label=".form-select-sm example"
-            >
-              <option selected>За замовчуванням</option>
-              <option value="1">За рейтингом</option>
-              <option value="2">Новинки</option>
-            </select>
-            <div
-              class="position-absolute vr bg-white top-0 v-line opacity-100 h-100"
-            ></div>
-          </div>
+      <div class="hstack mt-4 pt-2">
+        <p class="title mb-0 ff-sb">Фільтри</p>
+        <p class="my-fs-12 mb-0 me-3 ms-auto">Сортувати за:</p>
+        <div class="my-select position-relative">
+          <select
+            class="form-select form-select-sm my-pc my-fs-12 border-0 rounded-pill shadow-none"
+            aria-label=".form-select-sm example"
+          >
+            <option selected>За замовчуванням</option>
+            <option value="1">За рейтингом</option>
+            <option value="2">Новинки</option>
+          </select>
+          <div
+            class="position-absolute vr bg-white top-0 v-line opacity-100 h-100"
+          ></div>
         </div>
       </div>
       <div class="row mt-4">
         <div class="col-3 filter">
-          <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion" id="accordionPanelsStayOpen">
             <div class="accordion-item border-0 rounded-0">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="panelsStayOpen-collapseOne"
                 >
                   Категорії
@@ -233,7 +245,7 @@
               </h2>
               <div
                 id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
+                class="accordion-collapse collapse border-top-0 collapse"
                 aria-labelledby="panelsStayOpen-headingOne"
               >
                 <div class="accordion-body">
@@ -250,36 +262,39 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
                   aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  aria-controls="panelsStayOpen-collapseTwo"
                 >
                   Ціна
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
+                id="panelsStayOpen-collapseTwo"
                 class="accordion-collapse collapse border-top-0 show"
-                aria-labelledby="panelsStayOpen-headingOne"
+                aria-labelledby="panelsStayOpen-headingTwo"
               >
                 <div class="accordion-body">
                   <div
-                    class="slider w-100 position-relative"
+                    class="slider w-100 position-relative mt-2"
                     slider
                     id="slider-distance"
                   >
                     <div class="position-absolute">
                       <div class="inverse position-absolute start-0"></div>
-                      <div class="inverse position-absolute end-0"></div>
+                      <div
+                        class="inverse position-absolute end-0"
+                        style="width: 54%"
+                      ></div>
                       <div
                         class="range position-absolute"
                         range
-                        style="left: 0%; right: 0%"
+                        style="left: 0%; right: 46%"
                       ></div>
                       <span
                         class="thumb position-absolute text-start"
@@ -289,7 +304,7 @@
                       <span
                         class="thumb position-absolute text-start"
                         thumb
-                        style="left: 100%"
+                        style="left: 54%"
                       ></span>
                     </div>
                     <input
@@ -306,21 +321,27 @@
                       class="position-absolute w-100 opacity-0"
                       id="last-range"
                       type="range"
-                      value="100"
+                      value="54"
                       max="100"
                       min="0"
                       step="1"
                     />
                   </div>
-                  <div class="row">
-                    <div class="col-6">
-                      <div id="first-sign">
-                        <span>980</span>
+                  <div class="row mt-4">
+                    <div class="col-6 mt-3">
+                      <div class="border-bottom pt-1 pb-2">
+                        <p class="mb-0 my-fs-10 ff-sb">Від</p>
+                        <div class="mt-1">
+                          <span class="my-fs-12" id="first-sign">980</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-6">
-                      <div>
-                        <span id="last-sign">20465</span>
+                    <div class="col-6 mt-3">
+                      <div class="border-bottom pt-1 pb-2">
+                        <p class="mb-0 my-fs-10 ff-sb">Від</p>
+                        <div class="mt-1">
+                          <span class="my-fs-12" id="last-sign">21573</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -328,22 +349,22 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
                 >
                   Продавець
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -359,22 +380,22 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
                 >
                   Бренд
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingFour"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -390,53 +411,97 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseFive"
                   aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  aria-controls="panelsStayOpen-collapseFive"
                 >
                   Стать
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
+                id="panelsStayOpen-collapseFive"
                 class="accordion-collapse collapse border-top-0 show"
-                aria-labelledby="panelsStayOpen-headingOne"
+                aria-labelledby="panelsStayOpen-headingFive"
               >
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <div class="hstack p-1">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input shadow-none"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                        checked
+                      />
+                      <label
+                        class="form-check-label ms-2"
+                        for="flexCheckDefault"
+                      >
+                        Жінкам
+                      </label>
+                    </div>
+                    <p class="ms-auto mb-0 amount">(64)</p>
+                  </div>
+                  <div class="hstack p-1">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input shadow-none"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                        checked
+                      />
+                      <label
+                        class="form-check-label ms-2"
+                        for="flexCheckDefault"
+                      >
+                        Чоловікам
+                      </label>
+                    </div>
+                    <p class="ms-auto mb-0 amount">(16)</p>
+                  </div>
+                  <div class="hstack p-1">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input shadow-none"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label ms-2"
+                        for="flexCheckDefault"
+                      >
+                        Унісекс
+                      </label>
+                    </div>
+                    <p class="ms-auto mb-0 amount">(24)</p>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSix">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
                 >
                   Розмір
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingSix"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -452,22 +517,22 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSeven"
                 >
                   Колір
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingSeven"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -483,22 +548,22 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingEight">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseEight"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseEight"
                 >
                   Матеріал
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseEight"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingEight"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -514,22 +579,22 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingNine">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseNine"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseNine"
                 >
                   Сезон
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseNine"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingNine"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -545,22 +610,22 @@
               </div>
             </div>
             <div class="accordion-item border-0 rounded-0">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTen">
                 <button
-                  class="accordion-button rounded-0"
+                  class="accordion-button rounded-0 collapsed shadow-none"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
+                  data-bs-target="#panelsStayOpen-collapseTen"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTen"
                 >
                   Стиль
                 </button>
               </h2>
               <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse border-top-0"
-                aria-labelledby="panelsStayOpen-headingOne"
+                id="panelsStayOpen-collapseTen"
+                class="accordion-collapse collapse border-top-0 collapse"
+                aria-labelledby="panelsStayOpen-headingTen"
               >
                 <div class="accordion-body">
                   <strong>This is the first item's accordion body.</strong> It
@@ -577,7 +642,13 @@
             </div>
           </div>
         </div>
-        <div class="col-9" style="border: 1px solid red">2</div>
+        <div class="col-9">
+          <div class="row">
+            <div class="col-4">1</div>
+            <div class="col-4">2</div>
+            <div class="col-4">3</div>
+          </div>
+        </div>
       </div>
     </section>
   </body>

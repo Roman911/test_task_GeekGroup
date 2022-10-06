@@ -3,47 +3,18 @@
 .main {
   .breadcrumb-item {
     &.active {
-      color: #747778;
+      color: $dark-gray;
     }
   }
   .title {
     font-size: 22px;
-    font-family: Stolzl-Book;
   }
   .my-select {
     .form-select {
-      background-color: #eff1f1;
-      border-radius: 12px;
+      background-color: $gray;
     }
     .v-line {
       right: 30px;
-    }
-  }
-  .filter {
-    .accordion-item {
-      margin-bottom: 2px;
-      .accordion-header,
-      .accordion-collapse {
-        border: 1px solid #eff1f1;
-      }
-      .accordion-header {
-        .accordion-button {
-          background-color: #eff1f1;
-          color: #444748;
-          font-family: Stolzl-Book;
-          font-size: 14px;
-        }
-      }
-    }
-
-    .accordion-button:not(.collapsed) {
-      box-shadow: none;
-    }
-    .accordion-button:not(.collapsed)::after {
-      background-image: var(--bs-accordion-btn-icon);
-    }
-    .accordion-collapse {
-      margin-bottom: 10px;
     }
   }
 }

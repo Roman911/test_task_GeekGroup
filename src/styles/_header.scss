@@ -2,65 +2,43 @@
 
 header {
   .top {
-    background-color: #cbdcff;
-    padding-top: 6px;
+    background-color: $purple;
   }
   .navbar {
-    padding-top: 22px;
-    .row {
-      border-color: #e0e3e3;
-    }
     .search {
       &__icon {
         left: 25px;
         z-index: 10;
       }
-      &__input {
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-    }
-    .btn {
-      padding: 9px 21px;
-      background-color: $primery;
     }
     .form-select {
-      background-position: right 16px center;
-      background-size: 20px 12px;
-      width: 60px;
-      //margin-left: 4px;
+      width: 55px;
     }
-    .badge {
-      width: 14px;
-      height: 14px;
-      font-weight: 400;
-      color: $primery;
-      background-color: #eff1f1;
-      padding: 2px 4px;
-      font-size: 10px;
-      top: 3px;
-      &.active {
-        background-color: $red;
-        color: #fff;
+    .group {
+      & > div {
+        cursor: pointer;
       }
+      &__badge {
+        background-color: $gray;
+        padding: 2px 4px;
+        top: 3px;
+        &.active {
+          background-color: $red;
+        }
+      }
+    }
+    .avatar {
+      cursor: pointer;
     }
   }
   .nav-list {
     .nav-link {
-      color: $primery;
       font-size: 13px;
-      font-family: Stolzl-Medium;
-      letter-spacing: 0.4px;
       transition: 200ms;
-      border-bottom-width: 2px;
-      border-bottom-style: solid;
-      border-bottom-color: transparent;
-      &:hover {
-        border-bottom-color: $primery;
-        opacity: 0.8;
-      }
+      padding: 10px 15px;
+      &:hover,
       &.active {
-        border-bottom-color: $primery;
+        border-bottom-color: $primery !important;
       }
     }
   }
