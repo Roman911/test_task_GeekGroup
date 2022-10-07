@@ -1,0 +1,16 @@
+@import "/src/styles/variabels";
+
+footer {
+  background-color: $gray;
+  .wrap {
+    border-bottom: 1px solid #c4c7c7;
+    a {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      transition: 250ms;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
