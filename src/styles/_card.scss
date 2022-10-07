@@ -1,0 +1,21 @@
+@import "/src/styles/variabels";
+
+.card {
+  img {
+    width: fit-content;
+    max-width: 207px;
+  }
+  .card-body {
+    .brand {
+      color: $secondary;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+    .price {
+      &__old {
+        color: $dark-gray;
+      }
+    }
+  }
+}
