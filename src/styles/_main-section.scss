@@ -17,4 +17,23 @@
       right: 30px;
     }
   }
+  .pag {
+    width: max-content;
+    .pagination {
+      .page-item {
+        a {
+          border-color: #c4c7c7;
+          color: $secondary;
+        }
+        &.active {
+          a {
+            background-color: #fff;
+            padding: 0.5rem 0.95rem;
+            color: $primary;
+            border-color: $primary;
+          }
+        }
+      }
+    }
+  }
 }

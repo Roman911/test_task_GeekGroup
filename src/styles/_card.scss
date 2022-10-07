@@ -4,6 +4,7 @@
   img {
     width: fit-content;
     max-width: 207px;
+    max-height: 263px;
   }
   .card-body {
     .brand {
@@ -15,6 +16,12 @@
     .price {
       &__old {
         color: $dark-gray;
+      }
+    }
+    .user {
+      img {
+        width: 20px;
+        height: 20px;
       }
     }
   }
