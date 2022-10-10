@@ -12,7 +12,11 @@ header {
       }
     }
     .form-select {
-      width: 55px;
+      width: 53px;
+    }
+    .btn {
+      padding-left: 19px;
+      padding-right: 19px;
     }
     .group {
       & > div {
@@ -33,9 +37,8 @@ header {
   }
   .nav-list {
     .nav-link {
-      font-size: 13px;
       transition: 200ms;
-      padding: 10px 15px;
+      //padding: 10px 15px;
       &:hover,
       &.active {
         border-bottom-color: $primary !important;

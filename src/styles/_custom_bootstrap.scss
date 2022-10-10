@@ -5,6 +5,10 @@ $input-border-color: $border-color;
 $border-color-translucent: #eff1f1;
 $info: #b4fff0;
 
+$container-max-widths: (
+  xxl: 1344px,
+);
+
 // Configuration
 @import "/node_modules/bootstrap/scss/functions";
 @import "/node_modules/bootstrap/scss/variables";
