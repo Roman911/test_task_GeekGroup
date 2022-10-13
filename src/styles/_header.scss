@@ -38,11 +38,6 @@ header {
   .nav-list {
     .nav-link {
       transition: 200ms;
-      //padding: 10px 15px;
-      &:hover,
-      &.active {
-        border-bottom-color: $primary !important;
-      }
     }
   }
 }
