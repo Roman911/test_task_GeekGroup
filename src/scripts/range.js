@@ -6,7 +6,7 @@ const lastRange = document.getElementById("last-range");
 const firstSign = document.getElementById("first-sign");
 const lastSign = document.getElementById("last-sign");
 
-const children = firstRange.parentNode.childNodes[1].childNodes;
+const children = document.getElementsByClassName("children");
 
 let valueMin = 0;
 let valueMax = 54;
@@ -15,10 +15,10 @@ let priceMin = 980;
 let priceMax = 40930;
 
 const thumbMin = (input, sign) => {
-  input.value = Math.min(input.value, input.parentNode.childNodes[5].value - 1);
-  children[1].style.width = valueMin + "%";
-  children[5].style.left = valueMin + "%";
-  children[7].style.left = valueMin + "%";
+  input.value = Math.min(input.value, lastRange.value - 1);
+  children[0].style.width = valueMin + "%";
+  children[2].style.left = valueMin + "%";
+  children[3].style.left = valueMin + "%";
 
   if (valueMin === 0) {
     sign.innerHTML = priceMin;
@@ -28,13 +28,10 @@ const thumbMin = (input, sign) => {
 };
 
 const thumbMax = (input, sign) => {
-  input.value = Math.max(
-    input.value,
-    input.parentNode.childNodes[3].value - -1
-  );
-  children[3].style.width = 100 - valueMax + "%";
-  children[5].style.right = 100 - valueMax + "%";
-  children[9].style.left = valueMax + "%";
+  input.value = Math.max(input.value, firstRange.value - -1);
+  children[1].style.width = 100 - valueMax + "%";
+  children[2].style.right = 100 - valueMax + "%";
+  children[4].style.left = valueMax + "%";
 
   if (valueMax === 100) {
     sign.innerHTML = priceMax;
